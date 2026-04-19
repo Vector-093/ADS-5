@@ -13,7 +13,7 @@ class TStack {
     TStack() : top_i(-1) {}
 
     void push(T value) {
-        if (top_i < size - 1) {
+        if (top_i < kSize - 1) {
             m[++top_i] = value;
         }
     }
@@ -37,7 +37,7 @@ class TStack {
     }
 
     bool isFull() const {
-        return top_i == size - 1;
+        return top_i == kSize - 1;
     }
 };
 
