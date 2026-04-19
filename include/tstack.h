@@ -1,14 +1,15 @@
 // Copyright 2021 NNTU-CS
 #ifndef INCLUDE_TSTACK_H_
 #define INCLUDE_TSTACK_H_
+#include <array>
 
-template<typename T, int size>
+template<typename T, int kSize>
 class TStack {
-private:
-    T m[size];
+ private:
+    std::array<T, kSize> m;
     int top_i;
 
-public:
+ public:
     TStack() : top_i(-1) {}
 
     void push(T value) {
