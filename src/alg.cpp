@@ -62,7 +62,7 @@ std::string infx2pstfx(const std::string& inf) {
     return output;
 }
 
-int Eval(const std::string& pref) {
+int eval(const std::string& pref) {
     TStack<int, 100> stack;
 
     for (size_t i = 0; i < pref.length(); ++i) {
